@@ -3,8 +3,12 @@ import './styles.css';
 
 const LineAnimation = () => {
     return (
-        <div className={'point'}>
-            
+        <div className={'root'}>
+            <div className={'lineContainer'}>
+                <div className={'point'}>
+                    
+                </div>
+            </div>
         </div>
     )
 }

@@ -1,12 +1,27 @@
+.root {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lineContainer {
+  flex: 1;
+  background-color: red;
+}
+
 .point {
-    width: 6px;
-    height: 6px;
-    background: black;
-    border-radius: 3px;
-    transition: width 1s ease, height 1s ease;
-  }
+  width: 6px;
+  height: 6px;
+  background: black;
+  border-radius: 3px;
+  transition: width 1s ease, height 1s ease;
+}
   
-  .point:hover {
-    width: 200px;
-    height: 50px;
-  }
+.point:hover {
+  width: 200px;
+  height: 50px;
+}
+
+
