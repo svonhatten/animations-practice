@@ -4,10 +4,14 @@ import './styles.css';
 
 const LineAnimation = () => {
 
+    const [animate, setAnimate] = React.useState(false);
+
     const buttonClick = () => {
         console.log('you clicked me');
+        setAnimate(true);
+        document.getElementById('notif').className = 'notif';
 
-    }
+    };
 
     return (
         <div className={'root'}>
@@ -16,7 +20,7 @@ const LineAnimation = () => {
             </div>
             <div className={'footer'}>
                 <div className={'lineContainer'}>
-                    <div className={'notif'}>
+                    <div id="notif" className={animate ? 'notif' : null}>
                         <p className={'notifText'}>Hi! I'm a notification for you to see!</p>
                     </div>
                 </div>
