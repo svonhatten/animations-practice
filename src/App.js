@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import LineAnimation from './components/LineAnimation';
+import LoadingAnimation from './components/LoadingAnimation';
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
           Learn React
         </a>
       </header> */}
-      <LineAnimation />
+      {/* <LineAnimation /> */}
+      <LoadingAnimation />
     </div>
   );
 }
