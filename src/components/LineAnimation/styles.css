@@ -36,14 +36,24 @@
   order: 1;
   flex: 0 1 auto;
   align-self: flex-end;
+  margin-bottom: 10px;
 }
 
 @keyframes appear {
-  from {
+  0% {
     right: -100%;
   }
-  to {
+  25% {
     right: 0%;
+  }
+  50% {
+    right: 0%;
+  }
+  75% {
+    right: 0%;
+  }
+  100% {
+    right: -100%;
   }
 }
 
@@ -54,8 +64,9 @@
   border-radius: 3px;
   position: relative;
   animation-name: appear;
-  animation-duration: 2s;
+  animation-duration: 5s;
   animation-timing-function: ease;
+  animation-fill-mode: forwards;
 }
 
 .notifText {
