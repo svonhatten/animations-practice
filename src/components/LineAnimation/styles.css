@@ -1,0 +1,75 @@
+.root {
+  height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonContainer {
+  flex: 5;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: center;
+}
+
+.footer {
+  flex: 1;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.lineContainer {
+  order: 1;
+  flex: 0 1 auto;
+  align-self: flex-end;
+  margin-bottom: 10px;
+}
+
+@keyframes appear {
+  0% {
+    right: -100%;
+  }
+  25% {
+    right: 0%;
+  }
+  50% {
+    right: 0%;
+  }
+  75% {
+    right: 0%;
+  }
+  100% {
+    right: -100%;
+  }
+}
+
+.notif {
+  width: 200px;
+  height: 50px;
+  background: black;
+  border-radius: 3px;
+  position: relative;
+  animation-name: appear;
+  animation-duration: 5s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+.notifText {
+  color: white;
+}
+
