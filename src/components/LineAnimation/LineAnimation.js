@@ -21,7 +21,7 @@ const LineAnimation = () => {
             <div className={'footer'}>
                 <div className={'lineContainer'}>
                     <div id="notif" className={animate ? 'notif' : null}>
-                        <p className={'notifText'}>Hi! I'm a notification for you to see!</p>
+                        {animate ? <p className={animate ? 'notifText' : null}>Hi! I'm a notification for you to see!</p> : null}
                     </div>
                 </div>
             </div>

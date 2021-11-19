@@ -21,7 +21,8 @@ function App() {
         </a>
       </header> */}
       {/* <LineAnimation /> */}
-      <LoadingAnimation />
+      {/* <LoadingAnimation /> */}
+      <LineAnimation />
     </div>
   );
 }

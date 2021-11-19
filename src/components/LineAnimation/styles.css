@@ -71,5 +71,9 @@
 
 .notifText {
   color: white;
+  animation-name: appear;
+  animation-duration: 5s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
 }
 
