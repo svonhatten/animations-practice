@@ -1,0 +1,47 @@
+.root {
+    height: 100vh;
+    min-width: 100vw;
+    /* background-color: #282727; */
+    background-color: #1c1b1b;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes turn {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.box {
+    height: 50px;
+    width: 50px;
+    border: 5px solid transparent;
+    border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%,
+        #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    border-image-slice: 1;
+    animation-name: turn;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+.text {
+    padding-top: 20px;
+    color: white;
+}
