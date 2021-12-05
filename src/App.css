@@ -1,5 +1,10 @@
 .App {
+  height: 100vh;
+  min-width: 100vw;
   text-align: center;
+  background-color: #1c1b1b;
+  /* position: relative; */
+  overflow: hidden;
 }
 
 .App-logo {
@@ -39,4 +44,474 @@
 
 /* Transitions */
 
+.textWrapper {
+  background-color: #1c1b1b;
+}
 
+.textColor {
+  color: white;
+  background-color: #1c1b1b;
+  margin: 0;
+}
+
+.first {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* animation-name: firstSlide;
+  animation-duration: 15s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  position: absolute;
+  z-index: 1; */
+}
+
+.second {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* opacity: 0;
+  animation-name: secondSlide;
+  animation-delay: 15s;
+  animation-duration: 15s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  z-index: 5; */
+}
+
+.third {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* opacity: 0;
+  animation-name: thirdSlide;
+  animation-delay: 30s;
+  animation-duration: 15s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  z-index: 10; */
+}
+
+.fourth {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* opacity: 0;
+  animation-name: fourthSlide;
+  animation-delay: 45s;
+  animation-duration: 15s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  z-index: 15; */
+}
+
+.fifth {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* opacity: 0;
+  animation-name: fifthSlide;
+  animation-delay: 60s;
+  animation-duration: 15s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; */
+}
+
+.sixth {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* opacity: 0;
+  animation-name: sixthSlide;
+  animation-delay: 75s;
+  animation-duration: 15s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; */
+}
+
+.seventh {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* opacity: 0;
+  animation-name: seventhSlide;
+  animation-delay: 90s;
+  animation-duration: 15s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; */
+}
+
+.eighth {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* opacity: 0;
+  animation-name: eighthSlide;
+  animation-delay: 105s;
+  animation-duration: 15s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; */
+}
+
+.last {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* opacity: 0;
+  animation-name: lastSlide;
+  animation-delay: 120s;
+  animation-duration: 15s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; */
+}
+
+.verticalSlideshow {
+  height: 100em;
+  /* animation-name: slideshow;
+  animation-duration: 100s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; */
+  position: relative;
+}
+.verticalSlideshow > * {
+  height: 100vh;
+}
+.verticalSlideshow > *:first-child {
+  animation-name: slideshow;
+  animation-duration: 100s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideshow {
+  0% {
+    margin-top: 20em;
+  }
+  4% {
+    margin-top: 0em;
+  }
+  10% {
+    margin-top: 0em;
+  }
+  15% {
+    margin-top: 0em;
+  }
+  20% {
+    margin-top: -80em;
+  }
+  25% {
+    margin-top: -80em;
+  }
+  30% {
+    margin-top: -60em;
+  }
+  35% {
+    margin-top: -80em;
+  }
+  40% {
+    margin-top: -80em;
+  }
+  45% {
+    margin-top: -100em;
+  }
+  50% {
+    margin-top: -100em;
+  }
+  55% {
+    margin-top: -120em;
+  }
+  60% {
+    margin-top: -120em;
+  }
+  65% {
+    margin-top: -140em;
+  }
+  70% {
+    margin-top: -140em;
+  }
+  75% {
+    margin-top: -160em;
+  }
+  80% {
+    margin-top: -160em;
+  }
+  75% {
+    margin-top: -180em;
+  }
+  90% {
+    margin-top: -180em;
+  }
+  95% {
+    margin-top: -200em;
+  }
+  100% {
+    margin-top: -200em;
+  }
+}
+
+@keyframes firstSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(1000px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(500px);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(500px);
+  }
+  95% {
+    opacity: 1;
+    transform: translateY(500px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-500px);
+  }
+}
+
+@keyframes secondSlide {
+  0% {
+    opacity: 0;
+    top: 0;
+    transform: translateY(1000px);
+  }
+  5% {
+    opacity: 1;
+    top: 50%;
+    transform: translateY(500px);
+  }
+  80% {
+    opacity: 1;
+    top: 50%;
+    transform: translateY(500px);
+  }
+  95% {
+    opacity: 1;
+    top: 50%;
+    transform: translateY(500px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-500px);
+  }
+}
+
+@keyframes thirdSlide {
+  0% {
+    opacity: 0;
+    top: 0;
+    transform: translateY(1000px);
+  }
+  5% {
+    opacity: 1;
+    top: 50%;
+    transform: translateY(500px);
+  }
+  80% {
+    opacity: 1;
+    top: 50%;
+    transform: translateY(500px);
+  }
+  95% {
+    opacity: 1;
+    top: 50%;
+    transform: translateY(500px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-500px);
+  }
+}
+
+/* Loading Animation */
+@keyframes fourthSlide {
+  0% {
+    opacity: 0;
+    top: 0;
+    transform: translateY(1000px);
+  }
+  5% {
+    opacity: 1;
+    top: 50%;
+    transform: translateY(500px);
+  }
+  80% {
+    opacity: 1;
+    top: 50%;
+    transform: translateY(500px);
+  }
+  95% {
+    opacity: 1;
+    top: 50%;
+    transform: translateY(500px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-500px);
+  }
+}
+
+@keyframes fifthSlide {
+  0% {
+    opacity: 0;
+    top: 0;
+    transform: translateY(1000px);
+  }
+  5% {
+    opacity: 1;
+    top: 50%;
+    transform: translateY(500px);
+  }
+  80% {
+    opacity: 1;
+    top: 50%;
+    transform: translateY(500px);
+  }
+  95% {
+    opacity: 1;
+    top: 50%;
+    transform: translateY(500px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-500px);
+  }
+}
+
+@keyframes sixthSlide {
+  0% {
+    opacity: 0;
+    top: 0;
+    transform: translateY(1000px);
+  }
+  5% {
+    opacity: 1;
+    top: 50%;
+    transform: translateY(500px);
+  }
+  80% {
+    opacity: 1;
+    top: 50%;
+    transform: translateY(500px);
+  }
+  95% {
+    opacity: 1;
+    top: 50%;
+    transform: translateY(500px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-500px);
+  }
+}
+
+/* Notification Animation */
+@keyframes seventhSlide {
+  0% {
+    
+  }
+  10% {
+    
+  }
+  80% {
+    
+  }
+  100% {
+    
+  }
+}
+
+@keyframes eighthSlide {
+  0% {
+    opacity: 0;
+    top: 0;
+    transform: translateY(1000px);
+  }
+  5% {
+    opacity: 1;
+    top: 50%;
+    transform: translateY(500px);
+  }
+  80% {
+    opacity: 1;
+    top: 50%;
+    transform: translateY(500px);
+  }
+  95% {
+    opacity: 1;
+    top: 50%;
+    transform: translateY(500px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-500px);
+  }
+}
+
+@keyframes lastSlide {
+  0% {
+    opacity: 0;
+    top: 0;
+    transform: translateY(1000px);
+  }
+  5% {
+    opacity: 1;
+    top: 50%;
+    transform: translateY(500px);
+  }
+  80% {
+    opacity: 1;
+    top: 50%;
+    transform: translateY(500px);
+  }
+  95% {
+    opacity: 1;
+    top: 50%;
+    transform: translateY(500px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(500px);
+  }
+}
