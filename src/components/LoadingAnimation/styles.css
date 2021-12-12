@@ -1,7 +1,6 @@
 .root {
     height: 100vh;
     min-width: 100vw;
-    /* background-color: #282727; */
     background-color: #1c1b1b;
     display: flex;
     flex-direction:column;
