@@ -1,4 +1,5 @@
 import React from 'react';
+import { Zoom } from '@material-ui/core';
 import './styles.css';
 
 //either paint scribble animation, or perhaps a drawn square in
@@ -6,8 +7,12 @@ import './styles.css';
 const LoadingAnimation = () => {
     return (
         <div className={'root'}>
-            <div className={'box'}></div>
-            <div className={'text'}>This is for loading...</div>
+            <Zoom in={true}>
+                <div className={'box'}></div>
+            </Zoom>
+            <Zoom in={true}>    
+                <div className={'text'}>This is for loading...</div>
+            </Zoom>
         </div>
     )
 };
