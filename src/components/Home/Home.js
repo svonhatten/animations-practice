@@ -7,12 +7,13 @@ const Home = () => {
     return (
         <div className={'root'}>
             <div className={'headerContainer'}>
-                <h1 className={'headerText'}>Hello, Welcome to Sophie's Project!</h1>
-                <p className={'headerText'}>Have a look at any of the demos below</p>
+                <h1 className={'headerText'}>S O P H I E    V O N  H A T T E N</h1>
             </div>
+            <hr className={'divider'} />
             <div className={'cardsContainer'}>
                 <Grow in={true}>
                     <div className={'card upSize'} to="/notification">
+                        <div className={'cardGlow'}></div>
                         <div className={'innerCard upSize'}>
                             <Link to="/notification" className={'linkContainer'}>
                                 <h3 className={'linkText'}>Notification Demo</h3>
@@ -23,6 +24,7 @@ const Home = () => {
                 </Grow>
                 <Grow in={true}>
                     <div className={'card upSize'} to="/loading">
+                    <div className={'cardGlow'}></div>
                         <div className={'innerCard upSize'}>
                             <Link to="/loading" className={'linkContainer'}>
                                 <h3 className={'linkText'}>Loading Demo</h3>
