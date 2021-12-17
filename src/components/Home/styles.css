@@ -1,0 +1,116 @@
+.root {
+    height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1c1b1b;
+}
+
+.headerContainer {
+    padding-top: 10em;
+    position:relative;
+}
+
+.headerText {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    white-space: pre-wrap;
+
+}
+
+.divider {
+    margin-Top: 20px;
+    /* background-color: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%,
+    #b8fd33 50%, #fec837 75%, #fd1892 100%); */
+    width: 60%;
+}
+
+.cardsContainer {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card {
+    height: 300px;
+    width: 240px;
+    background-color: #1c1b1b;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 15px 15px 0px;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+
+
+.upSize:hover {
+    animation-name: upSize;
+    animation-timing-function: ease-out;
+}
+
+@keyframes upSize {
+    0% {
+        height: 300px;
+        width: 240px;
+        justify-content: space-between;
+    }
+    100% {
+        height: 325px;
+        width: 265px;
+        /* justify-content: center; */
+    }
+}
+
+.cardGlow {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%,
+    #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    filter: blur(10px);
+    z-index: 1;
+}
+
+.innerCard {
+    height: 300px;
+    width: 240px;
+    background-color: #1c1b1b;
+    border: 3px solid transparent;
+    border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%,
+        #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    border-image-slice: 1;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    position: absolute;
+    z-index: 2;
+}
+
+.linkContainer {
+    text-decoration: none;
+}
+
+.linkText {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    text-size-adjust: auto;
+    position: 'absolute';
+}
+
+.text {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    padding: 0px 8px 0px 8px;
+    position: 'absolute';
+    font-weight: 400;
+}

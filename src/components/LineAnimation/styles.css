@@ -7,6 +7,18 @@
   align-items: center;
 }
 
+.backButtonContainer {
+  width: 100vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 8px;
+}
+
+.backIcon {
+  color: white;
+}
+
 .buttonContainer {
   flex: 5;
   height: 100vh;
@@ -14,12 +26,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.button {
-  order: 0;
-  flex: 0 1 auto;
-  align-self: center;
 }
 
 .footer {
@@ -58,14 +64,13 @@
 }
 
 .notif {
-  width: 200px;
-  height: 50px;
-  background: black;
-  border: 3px solid transparent;
-  border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%,
-  #b8fd33 50%, #fec837 75%, #fd1892 100%);
-  border-image-slice: 1;
-  border-radius: 3px;
+  width: 240px;
+  height: 60px;
+  margin-right: 12px;
+  background: #05ce8e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   animation-name: appear;
   animation-duration: 5s;
@@ -75,6 +80,8 @@
 
 .notifText {
   color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
   animation-name: appear;
   animation-duration: 5s;
   animation-timing-function: ease;
